@@ -14,3 +14,13 @@ requirementx.txt
 ```angular2html
 ./manage.py exam http://example.com
 ```
+
+### exam command path
+```
+django-httpx/
+    manage.py
+    core/
+        management/
+            commands/
+                exam.py
+```
