@@ -24,7 +24,7 @@ class Command(BaseCommand):
     async def crawling(self):
         url_list_path = os.path.join(settings.BASE_DIR, 'url_list.txt')
         if not os.path.exists(url_list_path):
-            self.stdout.write(f"File not found: {url_list_path}")
+            logger.info(f"해당 파일이 존재하지 않습니다. 파일 경로 : {url_list_path}")
             return
 
         with open(url_list_path, 'r') as file:
